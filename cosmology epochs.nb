@@ -1,0 +1,1292 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     55038,       1284]
+NotebookOptionsPosition[     54291,       1263]
+NotebookOutlinePosition[     54635,       1278]
+CellTagsIndexPosition[     54592,       1275]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"data", "=", 
+   RowBox[{"Quiet", "[", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Quantity", "[", 
+         RowBox[{
+          RowBox[{"10", "^", "t"}], ",", "\"\<Years\>\""}], "]"}], ",", 
+        RowBox[{"UniverseModelData", "[", 
+         RowBox[{
+          RowBox[{"Quantity", "[", 
+           RowBox[{
+            RowBox[{"10", "^", "t"}], ",", "\"\<Years\>\""}], "]"}], ",", 
+          "p"}], "]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"p", ",", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<DarkEnergyDensityRatio\>\"", ",", 
+          "\"\<MatterEnergyDensityRatio\>\"", ",", 
+          "\"\<RadiationEnergyDensityRatio\>\""}], "}"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "3", ",", "11", ",", "0.2"}], "}"}]}], "]"}], 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.846180714080832*^9, 3.8461807140818295`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"6ff2ea3a-b1b9-4b98-b514-1244be771d4d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListLogLinearPlot", "[", 
+  RowBox[{"data", ",", 
+   RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+   RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"GridLines", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"13.8", "*", 
+        RowBox[{"10", "^", "9"}]}], "}"}], ",", "None"}], "}"}]}], ",", 
+   RowBox[{"PlotLegends", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<DarkEnergyDensityRatio\>\"", ",", 
+      "\"\<MatterEnergyDensityRatio\>\"", ",", 
+      "\"\<RadiationEnergyDensityRatio\>\""}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8461807374322042`*^9, 3.846180737433202*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"a5d7fe3b-f7f6-47af-aadd-b3f8336527c9"],
+
+Cell[BoxData[
+ TemplateBox[{GraphicsBox[{{}, {{{}, {}, {
+        Hue[0.67, 0.6, 0.6], 
+        Directive[
+         PointSize[0.009166666666666668], 
+         RGBColor[0.368417, 0.506779, 0.709798], 
+         AbsoluteThickness[1.6]], 
+        LineBox[CompressedData["
+1:eJxTTMoPSmViYGDQBGIQveB//8yuhdIOp1dyHtzUWGGr3NERL1Mp68DDpndJ
+qarPdolAo+q6AHmHiVNvnUp5uch28pk9X+WnKDi46X635snabntFYOeNF/WK
+DmvrC387vzxjKxa6dffGbCWHh+bZGuJnHtqGz9w4rypc2cGUzdlE9MZX2xl3
+1zY6O6s4JErsnFq3i8vuhuKqFB59VYdpv7dMFfRTsJNKW+Z+VUrNYUb4rhMb
+rxvbRa9apDWPTd2hQdi26rekh92cd/N40z+pO2iF7VT6bRtrd9do9gf9exoO
+b+qaXXv3FNrJlU+//OOkpoNWhNDBio5Wu4Tdk7cd3Krl4Lxj2v77+rPsIP7V
+dvDaaDz3ypv1do+ce2qCe3UczOzeJ+9tOWwH8b+uQ23klnMvP163Sz7T4vQ0
+Rc9h5+Vd/60r39otBYeHvsPS366bFhkx2RevsmuxljNwyN2XuOR8p5g9JHwM
+HG53V0669kfbfss7q3QWLkOHD6qRh5ZnOdpfBYeXocPHl6z1B7aH2n81Mvc6
++9XQYc5uIZc++Wx7SPgZOdT4hy1y/9pgb1ZurDvtoZHDE412892WU+0h4Wns
+IHE45PGcqavsK3brC8SfNXa4+W/+JbPlB+wh4WviwD+ppKf59hX7Hf+1P6vv
+NHH48Cbn0HmRV/aQ8DZ12McqfMV5zh/7n84a1z4sMXXYVKF/xnSFoIM0OPzN
+HH4dnGXt66LqYN2hsnPnBDOH5FM2E39oWjhA4sPcYZ2LmchMAw+H6jMKc5pq
+zB1e31zb5RYT7ACJH3MHz+y9jD8vhjvsFZCt986wcNiYqZnr/CrCARJfFg5T
+Pn6tW/s/wuFfiGSSSIilg/e5ymf/gXwAD9Iwhg==
+         "]]}, {
+        Hue[0.9060679774997897, 0.6, 0.6], 
+        Directive[
+         PointSize[0.009166666666666668], 
+         RGBColor[0.880722, 0.611041, 0.142051], 
+         AbsoluteThickness[1.6]], 
+        LineBox[CompressedData["
+1:eJwt0X0s1AEcx3GjsinrmGWe6Q7nOOfuuDs09+FmiZHdnbvflGmXQ0NYSh62
+c3YVYmpXSXEhsq4pD2nd0JJNsygtdMtDdU3TZjexK9yk4v747vv35/X2keUL
+5dZWVlYB/+7/b9mub6xpdYO5z7usz5YKclVVunuJB1bZ+rqKEjraSUrfx8le
+OPNRvjd4nQn1+KDJ64Y37BV5Ts3DYZgi6fRLCh8ohTVGjVcEDqX0D/TkHEZa
+x4WpOAc+pI09mlIpGQld7YmzsTG4Pd+lFAgoiM8p9KMciYXeR5txgOELpdp5
+NDg1Dq6ZD45Ou/qheEl+vqE6ASe0bTTNPn+Ya2c2TN1JaDJq7LNW/bFIM/TK
+ZpMxz7q7wligoqEtoDM6RgjP4oYP62MByLRZf9WiEuHUgPrZcD8NArPpx5Vm
+MXb3BkId5XJHdTUFBkFtuaguCLa60iCvZIllPx2ysejXW0YJTo+rYhYzglGZ
+e522nitFx44HA4O1J5mJ76Q4p41SRXqGgGq4aePgRlh8QjC6sFowLSbw1BiR
+tceOiV9DNqXKCgLTO15MXKZTdHGtBEwsbvyEiQlWAa+zT0dY/FjYv0UZ0b4h
+wClm0299ZcGcOicv0hMWTzbIPHNe9RcCFwcYpPQJNpYfJU1afyMsvqHg++uz
+7eYIPN8OXPPXhSLVvfz+4kvC4h2Gs9mRvbJLBDYE1JmV9jAUOk6OzH2Wwm3H
+n4OQbqXzd5EEkVUUne4aB+8VP3kP14SWHly45h+XS94eQ9m4d1NlORfEE6EH
+Uc+x9OHid/i9zRqDI4ZIHoqEbB6y5q3TNkem+bu9eDhIFg2RXhTx/4hdZE7i
+cMC4lFe5/CnqL7vgJjU=
+         "]]}, {
+        Hue[0.1421359549995791, 0.6, 0.6], 
+        Directive[
+         PointSize[0.009166666666666668], 
+         RGBColor[0.560181, 0.691569, 0.194885], 
+         AbsoluteThickness[1.6]], 
+        LineBox[CompressedData["
+1:eJxTTMoPSmViYGDQBGIQveB//8yuhdIOa2/LTeT8H+qg3NERL1Mp63DQReD9
++YBQhyUCjarrAuQdMjc8qP/SGOIw+cyer/JTFBwWZR7fM6M/2OGKwM4bL+oV
+HU7MtnOXqAhyEAvduntjtpLD/Q3259daBzqEz9w4rypc2WF2UNV+lV3+DjPu
+rm10dlZxmOAj+fb2YR+HG4qrUnj0VR0u3d4ZdnGpp4NU2jL3q1JqDgwhK7dk
+lLk5RK9apDWPTd2h9s8zJy5/Z4c57+bxpn9Sd/gczvnRytPB4a7R7A/69zQc
+Tmu9jfj1zcpBrnz65R8nNR1ENYR86t6aOiTsnrzt4FYth1M3xU0fdRo6QPyr
+7SDjM8v7wWJth0fOPTXBvToOO150tPHWq0L9r+vAU1f3UapDwSH5TIvT0xQ9
+h0NcqZemGEg6LAWHh76DtinDBw9uYYfiVXYt1nIGDi+0qg+Jz+OBho+BA+ui
++Z+yU1kdtryzSmfhMnSI8C5mfHPvv/1VcHgZOrTnulsnr/pu/9XI3OvsV0MH
+Xu0qdbuOj/aQ8DMChte2BbrvXtqblRvrTnto5ND+86IAj9pje0h4GjswHmnZ
+ZmB/x75it75A/FljB9mjNRs2nbtiDwlfE4dvuz+dfzbjnP2O/9qf1XeaOLhH
+VRtczzxmDwlvUwerot8REzkO2v901rj2YYmpw/Elen0cwTvspcHhb+aw9I9F
+VcqMDfbWHSo7d04wcxCdeGz/R88l9pD4MHfw+t7xucxjsn31GYU5TTXmDmIm
+jQ8n3i+1h8SPuUOJ+KRtrl4u9nsFZOu9Mywcdlgqvt2t/dkOEl8WDiYpF5YW
+fi20+xcimSQSYunwe8eJykl6S2wBnCIpSQ==
+         "]]}}, {{
+        Directive[
+         PointSize[0.009166666666666668], 
+         RGBColor[0.368417, 0.506779, 0.709798], 
+         AbsoluteThickness[1.6]]}, {
+        Directive[
+         PointSize[0.009166666666666668], 
+         RGBColor[0.880722, 0.611041, 0.142051], 
+         AbsoluteThickness[1.6]]}, {
+        Directive[
+         PointSize[0.009166666666666668], 
+         RGBColor[0.560181, 0.691569, 0.194885], 
+         AbsoluteThickness[1.6]]}}, {{
+        Directive[
+         PointSize[0.009166666666666668], 
+         RGBColor[0.368417, 0.506779, 0.709798], 
+         AbsoluteThickness[1.6]]}, {
+        Directive[
+         PointSize[0.009166666666666668], 
+         RGBColor[0.880722, 0.611041, 0.142051], 
+         AbsoluteThickness[1.6]]}, {
+        Directive[
+         PointSize[0.009166666666666668], 
+         RGBColor[0.560181, 0.691569, 0.194885], 
+         AbsoluteThickness[1.6]]}, {}, {}, {}, {}, {}, {}, {}}, {{
+        Directive[
+         PointSize[0.009166666666666668], 
+         RGBColor[0.368417, 0.506779, 0.709798], 
+         AbsoluteThickness[1.6]]}, {
+        Directive[
+         PointSize[0.009166666666666668], 
+         RGBColor[0.880722, 0.611041, 0.142051], 
+         AbsoluteThickness[1.6]]}, {
+        Directive[
+         PointSize[0.009166666666666668], 
+         RGBColor[0.560181, 0.691569, 0.194885], 
+         AbsoluteThickness[1.6]]}, {}, {}, {}, {}, {}, {}, {}}}, {{}, {}}}, {
+    DisplayFunction -> Identity, GridLines -> {{23.34793442910957}, None}, 
+     DisplayFunction -> Identity, DisplayFunction -> Identity, 
+     DisplayFunction -> Identity, DisplayFunction -> Identity, AspectRatio -> 
+     NCache[GoldenRatio^(-1), 0.6180339887498948], Axes -> {True, True}, 
+     AxesLabel -> {
+       FormBox[
+        TooltipBox[
+         StyleBox["\"yr\"", ShowStringCharacters -> False], "Years"], 
+        TraditionalForm], 
+       FormBox[
+        TooltipBox[
+         StyleBox["\"%\"", ShowStringCharacters -> False], "Percent"], 
+        TraditionalForm]}, AxesOrigin -> {6.132231827522338, 0}, 
+     DisplayFunction :> Identity, Frame -> {{False, False}, {False, False}}, 
+     FrameLabel -> {{None, None}, {None, None}}, 
+     FrameTicks -> {{Automatic, Automatic}, {
+        Charting`ScaledTicks[{Log, Exp}], 
+        Charting`ScaledFrameTicks[{Log, Exp}]}}, 
+     GridLines -> {{23.34793442910957}, None}, GridLinesStyle -> Directive[
+       GrayLevel[0.5, 0.4]], 
+     Method -> {
+      "OptimizePlotMarkers" -> True, 
+       "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+           (Exp[#]& )[
+            Part[#, 1]], 
+           (Identity[#]& )[
+            Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+           (Exp[#]& )[
+            Part[#, 1]], 
+           (Identity[#]& )[
+            Part[#, 2]]}& )}}, 
+     PlotRange -> {{6.132231827522338, 25.328436022934504`}, {
+       0, 99.99999391455746}}, PlotRangeClipping -> True, 
+     PlotRangePadding -> {{
+        Scaled[0.02], 
+        Scaled[0.02]}, {
+        Scaled[0.02], 
+        Scaled[0.05]}}, Ticks -> {
+       Charting`ScaledTicks[{Log, Exp}], Automatic}}],FormBox[
+    FormBox[
+     TemplateBox[{
+      "\"DarkEnergyDensityRatio\"", "\"MatterEnergyDensityRatio\"", 
+       "\"RadiationEnergyDensityRatio\""}, "PointLegend", 
+      DisplayFunction -> (FormBox[
+        StyleBox[
+         StyleBox[
+          PaneBox[
+           TagBox[
+            GridBox[{{
+               TagBox[
+                GridBox[{{
+                   GraphicsBox[{{
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    AbsoluteThickness[1.6]], {
+                    LineBox[{{0, 10}, {20, 10}}]}}, {
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    AbsoluteThickness[1.6]], {}}}, AspectRatio -> Full, 
+                    ImageSize -> {20, 10}, PlotRangePadding -> None, 
+                    ImagePadding -> Automatic, 
+                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #}, {
+                   GraphicsBox[{{
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    RGBColor[0.880722, 0.611041, 0.142051], 
+                    AbsoluteThickness[1.6]], {
+                    LineBox[{{0, 10}, {20, 10}}]}}, {
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    RGBColor[0.880722, 0.611041, 0.142051], 
+                    AbsoluteThickness[1.6]], {}}}, AspectRatio -> Full, 
+                    ImageSize -> {20, 10}, PlotRangePadding -> None, 
+                    ImagePadding -> Automatic, 
+                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #2}, {
+                   GraphicsBox[{{
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    RGBColor[0.560181, 0.691569, 0.194885], 
+                    AbsoluteThickness[1.6]], {
+                    LineBox[{{0, 10}, {20, 10}}]}}, {
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    RGBColor[0.560181, 0.691569, 0.194885], 
+                    AbsoluteThickness[1.6]], {}}}, AspectRatio -> Full, 
+                    ImageSize -> {20, 10}, PlotRangePadding -> None, 
+                    ImagePadding -> Automatic, 
+                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #3}}, 
+                 GridBoxAlignment -> {
+                  "Columns" -> {Center, Left}, "Rows" -> {{Baseline}}}, 
+                 AutoDelete -> False, 
+                 GridBoxDividers -> {
+                  "Columns" -> {{False}}, "Rows" -> {{False}}}, 
+                 GridBoxItemSize -> {"Columns" -> {{All}}, "Rows" -> {{All}}},
+                  GridBoxSpacings -> {
+                  "Columns" -> {{0.5}}, "Rows" -> {{0.8}}}], "Grid"]}}, 
+             GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+             AutoDelete -> False, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{1}}, "Rows" -> {{0}}}], 
+            "Grid"], Alignment -> Left, AppearanceElements -> None, 
+           ImageMargins -> {{5, 5}, {5, 5}}, ImageSizeAction -> 
+           "ResizeToFit"], LineIndent -> 0, StripOnInput -> False], {
+         FontFamily -> "Arial"}, Background -> Automatic, StripOnInput -> 
+         False], TraditionalForm]& ), 
+      InterpretationFunction :> (RowBox[{"PointLegend", "[", 
+         RowBox[{
+           RowBox[{"{", 
+             RowBox[{
+               RowBox[{"Directive", "[", 
+                 RowBox[{
+                   RowBox[{"PointSize", "[", "0.009166666666666668`", "]"}], 
+                   ",", 
+                   InterpretationBox[
+                    ButtonBox[
+                    TooltipBox[
+                    GraphicsBox[{{
+                    GrayLevel[0], 
+                    RectangleBox[{0, 0}]}, {
+                    GrayLevel[0], 
+                    RectangleBox[{1, -1}]}, {
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    RectangleBox[{0, -1}, {2, 1}]}}, DefaultBaseStyle -> 
+                    "ColorSwatchGraphics", AspectRatio -> 1, Frame -> True, 
+                    FrameStyle -> 
+                    RGBColor[
+                    0.24561133333333335`, 0.3378526666666667, 
+                    0.4731986666666667], FrameTicks -> None, PlotRangePadding -> 
+                    None, ImageSize -> 
+                    Dynamic[{
+                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                    StyleBox[
+                    RowBox[{"RGBColor", "[", 
+                    RowBox[{"0.368417`", ",", "0.506779`", ",", "0.709798`"}],
+                     "]"}], NumberMarks -> False]], Appearance -> None, 
+                    BaseStyle -> {}, BaselinePosition -> Baseline, 
+                    DefaultBaseStyle -> {}, ButtonFunction :> 
+                    With[{Typeset`box$ = EvaluationBox[]}, 
+                    If[
+                    Not[
+                    AbsoluteCurrentValue["Deployed"]], 
+                    SelectionMove[Typeset`box$, All, Expression]; 
+                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+                    FrontEnd`Private`$ColorSelectorInitialColor = 
+                    RGBColor[0.368417, 0.506779, 0.709798]; 
+                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+                    MathLink`CallFrontEnd[
+                    FrontEnd`AttachCell[Typeset`box$, 
+                    FrontEndResource["RGBColorValueSelector"], {
+                    0, {Left, Bottom}}, {Left, Top}, 
+                    "ClosingActions" -> {
+                    "SelectionDeparture", "ParentChanged", 
+                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
+                    Automatic, Method -> "Preemptive"], 
+                    RGBColor[0.368417, 0.506779, 0.709798], Editable -> False,
+                     Selectable -> False], ",", 
+                   RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}]}], "]"}], 
+               ",", 
+               RowBox[{"Directive", "[", 
+                 RowBox[{
+                   RowBox[{"PointSize", "[", "0.009166666666666668`", "]"}], 
+                   ",", 
+                   InterpretationBox[
+                    ButtonBox[
+                    TooltipBox[
+                    GraphicsBox[{{
+                    GrayLevel[0], 
+                    RectangleBox[{0, 0}]}, {
+                    GrayLevel[0], 
+                    RectangleBox[{1, -1}]}, {
+                    RGBColor[0.880722, 0.611041, 0.142051], 
+                    RectangleBox[{0, -1}, {2, 1}]}}, DefaultBaseStyle -> 
+                    "ColorSwatchGraphics", AspectRatio -> 1, Frame -> True, 
+                    FrameStyle -> 
+                    RGBColor[
+                    0.587148, 0.40736066666666665`, 0.09470066666666668], 
+                    FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
+                    Dynamic[{
+                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                    StyleBox[
+                    RowBox[{"RGBColor", "[", 
+                    RowBox[{"0.880722`", ",", "0.611041`", ",", "0.142051`"}],
+                     "]"}], NumberMarks -> False]], Appearance -> None, 
+                    BaseStyle -> {}, BaselinePosition -> Baseline, 
+                    DefaultBaseStyle -> {}, ButtonFunction :> 
+                    With[{Typeset`box$ = EvaluationBox[]}, 
+                    If[
+                    Not[
+                    AbsoluteCurrentValue["Deployed"]], 
+                    SelectionMove[Typeset`box$, All, Expression]; 
+                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+                    FrontEnd`Private`$ColorSelectorInitialColor = 
+                    RGBColor[0.880722, 0.611041, 0.142051]; 
+                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+                    MathLink`CallFrontEnd[
+                    FrontEnd`AttachCell[Typeset`box$, 
+                    FrontEndResource["RGBColorValueSelector"], {
+                    0, {Left, Bottom}}, {Left, Top}, 
+                    "ClosingActions" -> {
+                    "SelectionDeparture", "ParentChanged", 
+                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
+                    Automatic, Method -> "Preemptive"], 
+                    RGBColor[0.880722, 0.611041, 0.142051], Editable -> False,
+                     Selectable -> False], ",", 
+                   RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}]}], "]"}], 
+               ",", 
+               RowBox[{"Directive", "[", 
+                 RowBox[{
+                   RowBox[{"PointSize", "[", "0.009166666666666668`", "]"}], 
+                   ",", 
+                   InterpretationBox[
+                    ButtonBox[
+                    TooltipBox[
+                    GraphicsBox[{{
+                    GrayLevel[0], 
+                    RectangleBox[{0, 0}]}, {
+                    GrayLevel[0], 
+                    RectangleBox[{1, -1}]}, {
+                    RGBColor[0.560181, 0.691569, 0.194885], 
+                    RectangleBox[{0, -1}, {2, 1}]}}, DefaultBaseStyle -> 
+                    "ColorSwatchGraphics", AspectRatio -> 1, Frame -> True, 
+                    FrameStyle -> 
+                    RGBColor[
+                    0.37345400000000006`, 0.461046, 0.12992333333333334`], 
+                    FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
+                    Dynamic[{
+                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                    StyleBox[
+                    RowBox[{"RGBColor", "[", 
+                    RowBox[{"0.560181`", ",", "0.691569`", ",", "0.194885`"}],
+                     "]"}], NumberMarks -> False]], Appearance -> None, 
+                    BaseStyle -> {}, BaselinePosition -> Baseline, 
+                    DefaultBaseStyle -> {}, ButtonFunction :> 
+                    With[{Typeset`box$ = EvaluationBox[]}, 
+                    If[
+                    Not[
+                    AbsoluteCurrentValue["Deployed"]], 
+                    SelectionMove[Typeset`box$, All, Expression]; 
+                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+                    FrontEnd`Private`$ColorSelectorInitialColor = 
+                    RGBColor[0.560181, 0.691569, 0.194885]; 
+                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+                    MathLink`CallFrontEnd[
+                    FrontEnd`AttachCell[Typeset`box$, 
+                    FrontEndResource["RGBColorValueSelector"], {
+                    0, {Left, Bottom}}, {Left, Top}, 
+                    "ClosingActions" -> {
+                    "SelectionDeparture", "ParentChanged", 
+                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
+                    Automatic, Method -> "Preemptive"], 
+                    RGBColor[0.560181, 0.691569, 0.194885], Editable -> False,
+                     Selectable -> False], ",", 
+                   RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}]}], "]"}]}],
+              "}"}], ",", 
+           RowBox[{"{", 
+             RowBox[{#, ",", #2, ",", #3}], "}"}], ",", 
+           RowBox[{"LegendMarkers", "\[Rule]", 
+             RowBox[{"{", 
+               RowBox[{
+                 RowBox[{"{", 
+                   RowBox[{"False", ",", "Automatic"}], "}"}], ",", 
+                 RowBox[{"{", 
+                   RowBox[{"False", ",", "Automatic"}], "}"}], ",", 
+                 RowBox[{"{", 
+                   RowBox[{"False", ",", "Automatic"}], "}"}]}], "}"}]}], ",", 
+           RowBox[{"Joined", "\[Rule]", 
+             RowBox[{"{", 
+               RowBox[{"True", ",", "True", ",", "True"}], "}"}]}], ",", 
+           RowBox[{"LabelStyle", "\[Rule]", 
+             RowBox[{"{", "}"}]}], ",", 
+           RowBox[{"LegendLayout", "\[Rule]", "\"Column\""}]}], "]"}]& ), 
+      Editable -> True], TraditionalForm], TraditionalForm]},
+  "Legended",
+  DisplayFunction->(GridBox[{{
+      TagBox[
+       ItemBox[
+        PaneBox[
+         TagBox[#, "SkipImageSizeLevel"], Alignment -> {Center, Baseline}, 
+         BaselinePosition -> Baseline], DefaultBaseStyle -> "Labeled"], 
+       "SkipImageSizeLevel"], 
+      ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}}, 
+    GridBoxAlignment -> {"Columns" -> {{Center}}, "Rows" -> {{Center}}}, 
+    AutoDelete -> False, GridBoxItemSize -> Automatic, 
+    BaselinePosition -> {1, 1}]& ),
+  Editable->True,
+  InterpretationFunction->(RowBox[{"Legended", "[", 
+     RowBox[{#, ",", 
+       RowBox[{"Placed", "[", 
+         RowBox[{#2, ",", "After"}], "]"}]}], "]"}]& )]], "Output",
+ CellChangeTimes->{3.8461807397510605`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"e01bd827-1a87-43ec-89a4-a74e2577eb74"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["data"], "Input",
+ CellChangeTimes->{{3.8461922277651*^9, 3.8461922281548166`*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"3a03cfeb-4d85-4541-b7f9-96bdc306c4f5"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1000.`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{
+        "1.3930408511214107`*^-12","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1584.893192461114`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{
+        "3.4648444200819582`*^-12","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2511.88643150958`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"8.600042847291481`*^-12","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3981.0717055349733`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"2.129513557492204`*^-11","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6309.57344480193`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{
+        "5.2589154758714375`*^-11","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"10000.`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{
+        "1.2949187920674688`*^-10","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"15848.93192461114`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"3.178731065362392`*^-10","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"25118.864315095823`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"7.7790155865979`*^-10","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"39810.71705534969`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"1.89814667946711`*^-9","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"63095.7344480193`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"4.619955206285041`*^-9","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"100000.`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"1.1223132485543263`*^-8","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"158489.3192461114`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"2.7233840223182593`*^-8","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"251188.6431509582`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"6.607372549397704`*^-8","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"398107.1705534969`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"1.6043404163908271`*^-7","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"630957.3444801943`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"3.902168255975883`*^-7","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^6","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"9.51442695654812`*^-7","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.5848931924611141`*^6","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"2.3267882904643714`*^-6","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2.5118864315095823`*^6","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"5.708926646327803`*^-6","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3.9810717055349695`*^6","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.00001405409420072468`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6.309573444801942`*^6","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{
+        "0.000034709539508340986`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^7","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.00008597688528921297`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.5848931924611142`*^7","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.00021352881707334303`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2.5118864315095823`*^7","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.0005315131317697435`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3.9810717055349775`*^7","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.0013255481572672612`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6.309573444801943`*^7","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.003310945380313025`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^8","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.008280334130894344`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.584893192461111`*^8","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.02072803999343699`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2.511886431509582`*^8","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.05192270541227212`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3.9810717055349857`*^8","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.1301029709284112`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6.309573444801943`*^8","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.3258980628618539`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^9","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.8150404736874446`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.5848931924611108`*^9","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"1.7881506237175553`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2.511886431509582`*^9","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"4.414267721555165`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3.9810717055349855`*^9","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"10.633401739732097`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6.309573444801943`*^9","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"24.1639490865149`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^10","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"48.37967159890955`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.5848931924611109`*^10","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"77.441805524613`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2.511886431509582`*^10","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"95.2808231687351`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3.981071705534985`*^10","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"99.6603653816626`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6.3095734448019424`*^10","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"99.9949643518251`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^11","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"99.99999391455746`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1000.`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"12.015041206113883`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1584.893192461114`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"14.737308914796788`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2511.88643150958`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"17.96945222603191`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3981.0717055349733`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"21.7563030974698`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6309.57344480193`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"26.123518856782997`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"10000.`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"31.067517546621605`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"15848.93192461114`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"36.54575510540834`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"25118.864315095823`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"42.469853215580386`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"39810.71705534969`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"48.7045524230116`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"63095.7344480193`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"55.07493464923839`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"100000.`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"61.38250658966168`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"158489.3192461114`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"67.42789909445453`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"251188.6431509582`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"73.03525713983468`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"398107.1705534969`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"78.07231210918471`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"630957.3444801943`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"82.4614205267108`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^6","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"86.17996838059689`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.5848931924611141`*^6","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"89.25190269455571`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2.5118864315095823`*^6","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"91.73423940109708`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3.9810717055349695`*^6","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"93.70264686776684`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6.309573444801942`*^6","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"95.23908647573529`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^7","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"96.4229134525018`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.5848931924611142`*^7","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"97.32552741735262`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2.5118864315095823`*^7","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"98.00790262570794`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3.9810717055349775`*^7","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"98.52006367238036`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6.309573444801943`*^7","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"98.90159016143369`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^8","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"99.1822975026336`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.584893192461111`*^8","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"99.38210436362344`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2.511886431509582`*^8","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"99.50838803799756`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3.9810717055349857`*^8","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"99.54704673464556`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6.309573444801943`*^8","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"99.43813534840318`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^9","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"99.01401602859679`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.5848931924611108`*^9","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"98.08414893914752`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2.511886431509582`*^9","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"95.49784941978011`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3.9810717055349855`*^9","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"89.3109186903464`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6.309573444801943`*^9","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"75.80720351776041`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^10","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"51.61201158884633`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.5848931924611109`*^10","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"22.559938271223785`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2.511886431509582`*^10","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"4.7212332877811525`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3.981071705534985`*^10","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.3400865467369471`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6.3095734448019424`*^10","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.005064072979799729`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^11","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"6.419149683408213`*^-6","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1000.`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"87.98495891583907`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1584.893192461114`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"85.26269127453544`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2511.88643150958`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"82.03054806654258`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3981.0717055349733`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"78.24369735216035`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6309.57344480193`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"73.87648182977784`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"10000.`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"68.9324834939939`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"15848.93192461114`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"63.45424645874774`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"25118.864315095823`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"57.5301491139918`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"39810.71705534969`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"51.295451012374215`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"63095.7344480193`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"44.92507036464667`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"100000.`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"38.61750065115573`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"158489.3192461114`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"32.57211125332096`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"251188.6431509582`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"26.964757497694148`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"398107.1705534969`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"21.927708391602284`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"630957.3444801943`","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"17.53860790092748`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^6","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"13.82007061251175`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.5848931924611141`*^6","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"10.748150066578418`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2.5118864315095823`*^6","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"8.265830561343158`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3.9810717055349695`*^6","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"6.297442710320583`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6.309573444801942`*^6","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"4.7610204219939005`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^7","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"3.5771937555158395`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.5848931924611142`*^7","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"2.674522300240144`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2.5118864315095823`*^7","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"1.9919242912917152`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3.9810717055349775`*^7","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"1.4790985408388637`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6.309573444801943`*^7","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"1.0957623998717196`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^8","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.8103244913969151`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.584893192461111`*^8","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.598394425250988`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2.511886431509582`*^8","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.44135682891925404`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3.9810717055349857`*^8","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.32511584506126373`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6.309573444801943`*^8","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.23904118684501413`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^9","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.17510499827649736`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.5848931924611108`*^9","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.13307396740755612`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2.511886431509582`*^9","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.09501698943371926`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3.9810717055349855`*^9","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.06482532485914534`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6.309573444801943`*^9","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.039626650486100846`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^10","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.018831118215749933`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.5848931924611109`*^10","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.0053401659461771635`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"2.511886431509582`*^10","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"0.0006192055126496968`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"3.981071705534985`*^10","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{
+        "0.000018282734181968122`","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"6.3095734448019424`*^10","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"6.690161442924424`*^-8","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"1.`*^11","\"yr\"","years","\"Years\""},
+        "Quantity"], ",", 
+       TemplateBox[{"9.177675811815566`*^-12","\"%\"","percent","\"Percent\""},
+        "QuantityPostfix"]}], "}"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.84619222904083*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"a019d83b-98a0-4793-bb1c-99908bf575bf"]
+}, Open  ]]
+},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"12.0 para Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1034, 28, 45, "Input",ExpressionUUID->"6ff2ea3a-b1b9-4b98-b514-1244be771d4d"],
+Cell[CellGroupData[{
+Cell[1617, 52, 801, 19, 45, "Input",ExpressionUUID->"a5d7fe3b-f7f6-47af-aadd-b3f8336527c9"],
+Cell[2421, 73, 20329, 424, 597, "Output",ExpressionUUID->"e01bd827-1a87-43ec-89a4-a74e2577eb74"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22787, 502, 174, 2, 28, "Input",ExpressionUUID->"3a03cfeb-4d85-4541-b7f9-96bdc306c4f5"],
+Cell[22964, 506, 31311, 754, 550, "Output",ExpressionUUID->"a019d83b-98a0-4793-bb1c-99908bf575bf"]
+}, Open  ]]
+}
+]
+*)
+
